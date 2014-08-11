@@ -49,7 +49,9 @@ public class FriendsFragment extends ListFragment {
 		query.findInBackground(new FindCallback<ParseUser>() {
 			@Override
 			public void done(List<ParseUser> friends, ParseException e) {
-				getActivity().setProgressBarIndeterminateVisibility(false);
+				if (getActivity() != null) {
+					getActivity().setProgressBarIndeterminateVisibility(false);
+				}
 
 				if (e == null) {
 					mFriends = friends;
