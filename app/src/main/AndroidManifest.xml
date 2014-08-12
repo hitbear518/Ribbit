@@ -47,6 +47,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sw.ribbit.MyActivity" />
         </activity>
+        <activity
+            android:name=".RecipientsActivity"
+            android:label="@string/title_activity_recipients"
+            android:parentActivityName=".MyActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value="com.sw.ribbit.MyActivity" />
+        </activity>
     </application>
 
 </manifest>
