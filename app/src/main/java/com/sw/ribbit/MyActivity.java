@@ -46,6 +46,7 @@ public class MyActivity extends Activity implements ActionBar.TabListener {
 
 	protected Uri mMediaUri;
 
+
 	protected DialogInterface.OnClickListener mDialogListener = new DialogInterface.OnClickListener() {
 		@Override
 		public void onClick(DialogInterface dialog, int which) {
@@ -203,6 +204,7 @@ public class MyActivity extends Activity implements ActionBar.TabListener {
 			);
 		}
 	}
+
 
 	private void navigateToLogin() {
 		Intent intent = new Intent(this, LoginActivity.class);
